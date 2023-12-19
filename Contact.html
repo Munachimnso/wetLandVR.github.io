@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title> Practice Website </title>
+    <link rel="stylesheet"  href="ContactStyles.css"> 
+        <!--- the statment above, is used to link style file to html-->
+
+   <!-- Fontawesome icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+            
+
+    
+           
+</head>
+<body>  
+    <!-- the body( a tag ) for website visiual display features, such as images, nav boards -->
+    
+    
+       
+    <section class="NagBar">
+        <!--  What is <div  tag "????"-->
+
+        <div class="logo">
+            <img src  = " https://upload.wikimedia.org/wikipedia/commons/8/8c/Southern_Jaguars_SU_script_logo.gif " alt = " Jag logo " width = "200" height = "50"> 
+               <!--     Adding a logo image to header/Nav bar
+                    
+                    <img> a tag used to add images
+                    src - is an  attribute  that  specifies the external link/resouces you need for the image, example URL
+                    alt -  attribute gives text that describes the image
+
+                      what is an attribute "????"  
+                       
+                         -->
+
+         </div>
+
+        <div class= "NavbarPagesContent">
+
+               <!-- Create NavBar tabs-->
+                   
+               
+              <ul>
+                <li><a  href = "Home.html" >Home</a></li>
+                <li><a href = "AboutUs.html" >About Us</a></li>
+                <li><a href = "BenefitsPage.html" >Benefits</a></li>
+                
+                <li><a href = "Contact.html" >Contact</a></li>
+                <li class = "viewNow"><a   class = "blackHover"  >View Now</a>
+                  <ul class = "vewNowVertList"> <!-- creating the Vertical list items for ViewNow,(https://www.youtube.com/watch?v=NsHhKpR1ItA)-->
+
+                     <li><a  href = "viewNowSubtabPopWetlands.html" > WetLands</a></li>
+                     <li><a  href = "wetLandAR.html" > Explore</a></li>
+
+                  </ul>
+              </li>
+               
+                    
+              
+              </ul>
+                  <!-- <ul(a tag) used to define an unordered list,
+                       <li - is a  list item
+                       <a  - a tag used to create  hyper link, for example links/tabs to different web pages
+                             href - attribute used to define the link location
+                               "WetLands.html used link to the page/tab 
+                                     Wetlands - name of the tab
+                    --->
+             
+         </div>
+      
+
+    </section>
+
+
+    <section class = "contact">
+      
+      <div class="contactHeading">
+             <h3>  Make WetLands Great  Again </h3>  
+             <h2> CONTACT US </h1>
+              
+             <p class = "text"> 
+              Our mission is to inspire people to establish profound and enduring connections with nature by providing enriching environmental education and recreation opportunities. We strive to foster a deep appreciation for Wetland Area landscapes, encouraging exploration through innovative technologies. As these experiences unfold, the reciprocal influence between nature, education, recreation, and technology becomes a driving force, promoting a harmonious relationship between individuals and the wetland environment.
+             </p>
+      </div>
+
+      
+    <div class = "contactContainer" >
+      <div class="contactInfo">
+        <div class="phoneNumber" >
+           <span><i class = "fas fa-mobile-alt"></i> 
+            <!-- '<i>' tagedefine text in an italic style
+                      Thus "i class = "fas fa-mobile-alt" used to show case the phone icon
+             -->
+           </span>
+
+           <span>Phone No</span>
+           <span class = "text"> WetLandProjectOwnerNumber</span>
+
+          </div>
+
+
+
+
+        <div class="Address">
+        <span><i class = "fas fa-map-marker-alt"></i>
+        </span>
+
+        <span>Address</span>
+        <span class = "text"> 801 Harding Blvd, Baton Rouge, LA 70807 </span>
+
+       </div>
+          
+        <div class="Email">
+
+        <span><i class = "fas fa-envelope-open"></i>
+        </span>
+
+        <span>E-mail</span>
+        <span class = "text">Munachimnso.orimma@sus.edu </span>
+       </div>
+        
+        <div class="OpeningHours">
+        <span><i class = "fas fa-clock"></i> 
+        </span>
+
+        <span>Opening Hours</span>
+        <span class = "text"> Monday - Friday (9:00 AM to 5:00 PM)</span>
+
+       </div>
+
+
+      </div>
+    </div>
+
+    </section>
+
+
+     <section  class = "ConatactForm">
+    <div class="contact-form">
+       <form> 
+        <!-- explain the form tag 
+          Form tag(https://www.youtube.com/watch?v=2O8pkybH6po) is used to create form
+           inlcude:
+            input tag(https://www.youtube.com/shorts/kBlizZaXxLo?feature=share)  for  user input, thus creating box for inputs
+               inlcude different attrubites for the type of input  you need,
+                   Example; <input type "Text"
+
+            placeholder -  Used  to  display text in form to the user
+                  example-  <input  placeholder = " First name"
+        -->
+         <div>
+          <input class = "form-control" type = "text"   placeholder = "First Name">
+          <input type = "text"  class = "form-control" placeholder = "Last Name">
+         </div>
+
+         <div>
+          <input type = "email"  class = "form-control" placeholder = "E-mail">
+          <input type = "text"  class = "form-control" placeholder = "Phone">
+         </div>
+         <textarea rows = "5" placeholder = "Message" class = "form-control">
+          
+            
+         </textarea> 
+             <!-- textarea tag  - create multi-line text input field, for user longer text 
+                  row attribute - Specifies the number of visible text lines within the textarea
+
+          -->
+        <input type = "submit"  class = "sendButton" placeholder = "send message">
+
+      </form>
+
+      <div class="contactImage">
+        
+        <img  src = "images/contatcimage2.jpeg"  alt = "contactWebImage">
+
+      </div>
+     </div>
+
+     
+
+    
+
+     
+
+
+     
+
+
+     </section>
+
+    
+
+
+
+    
+
+
+    <!--
+                   POSSIBLE FUTUER FEATURES;
+
+                1) FOR NAMES ADDING A BIO PAGE LINK, WITH MORE INFORMATION ON TEAM MEMEBERS,
+
+                         APPLE LEADER PAGE AS EXAMPLE;
+                            https://www.apple.com/leadership/
+
+
+
+
+    -->
+
+
+

@@ -1,0 +1,526 @@
+
+/* HELP RESOURCES FOR BUILDING  CONTACT PAGE:
+https://www.youtube.com/watch?v=MA74HEkua-g&t=441s */
+
+/* css pages used  for style rules that define the appearance and layout of HTML elements on a web page. 
+These style rules are applied to the corresponding HTML elements based on their selectors. 
+Selectors can target elements by their tag name, class, ID, or other attributes.
+
+   Key Words ; 
+   
+   alignment = positioning of objects in a straight line
+
+
+*/ 
+
+        
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+      /* Using for google font for the project */
+
+        /*CSS styles for the dashboard */
+         /* .NagBar css, code belw used to style navBar list & logo in one row list, on the website */
+        
+        
+         
+
+          /*
+              
+            body is a selector, used to target the entire web page
+            background-image specifies  the path to the image file you want to use as the background 
+            background-position: center; property centers the image within the background area. 
+            background-repeat: no-repeat; property prevents the image from repeating
+
+            height: 100vh, expands the background to complete height of the  webpage.
+
+
+       
+          
+          */
+
+          .NagBar
+          { 
+            display : flex;
+        align-items : center;
+        justify-content: space-between;
+        padding: 20px, 80px;
+        position: sticky; 
+        top: 0;
+        left: 0;
+
+        background-color: rgba(0, 0, 0, 0.5); /* Gray color with transparency */
+        backdrop-filter: blur(10px); /* Applies a blur effect to the background */ 
+
+        /* 
+              backdrop-filter property applies a visual effect to the background of the element. 
+              In this case, it applies a blur effect with a radius of 10px. 
+              Adjust the blur radius as desired to control the level of blurriness
+        
+        */
+      
+
+        
+
+        
+        
+
+        
+         
+         
+         }
+           /* .NagBar code is used to alline the logo, &  navbar contents/links into  one vertical row and spaced
+
+                display : flex -> is  use to used to create a flexible box layout for the elements  
+                It enables flexible positioning and alignment of the child elements within the  flex container.
+                align-items : center  -> aligns the child elements vertically within the flex container along the cross-axis. 
+                justify-content: space-between -> property determines the alignment of the child elements along the main axis
+                           "space-between" --> positions the elements with equal spacing between them, 
+                
+                padding: 20px, 80px; -> property defines the padding space around the content of the elements with the "NagBar" class
+                                           "20px, 80px" --> top/bottom and left/right padding/; spacing between elements
+                position: sticky;--> always the Nav Bar to stay in position, 
+            */
+
+         .NavbarPagesContent ul
+          { 
+            display : flex;
+            align-items : center;
+            justify-content:  center;
+            list-style: none;
+           
+            
+
+         
+          }
+
+          /* 
+             .NavbarPagesContent ul -   to aline the  nav bar links within one vertical row[lines 54-56] &
+                                             remove bolt points[ line 57]  
+                                           
+
+
+          */
+          
+
+         
+         .NavbarPagesContent a 
+         { 
+            font-family: "Arial";
+            padding: 0 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 545;
+            color: whitesmoke;
+         
+            
+
+         }
+
+
+
+          /*  
+                  
+              .NavbarPagesContenta   ->add spacing(padding) to in between each link with the list,[ line 76] 
+                                         used to change the color of the links/tag
+                                         remove the from the text
+
+
+                  text-decoration: none; --> removes the underline, "none" is used ensures that link text does not have any text decoration  
+                  font-size: 16px; --> sets the font size of the link  text  
+                  font-weight: 600 --> Sets the font weight of the anchor text to 600, 
+                                         which corresponds to a bold font weight, thus appearing thicker   
+                  color:  white; --> Sets the color of the link text to white.   
+                 font-family: "Arial" --> change font type    
+                     
+            */ 
+
+
+            .NavbarPagesContent  a:hover,
+            .NavbarPagesContent a.active
+            {
+      
+              
+               border-radius: 2px;
+               
+              
+               box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+               
+            }
+
+             /* 
+               change the color of the link/tag back ground,when hovered by th mouse;
+               And alawys the page im on to be hovered
+              .NavbarPagesContent a.active
+                    1) within our class NavbarPagesContenttag and its tag selector "a"
+                        that  contain the hyper link elements,  which assigned active to "aboutus" hyper link
+                        ,  thus allowing the hover syltes above to stay on that hyperlink page no matter.
+            
+             */ 
+
+
+             a.blackHover
+             { 
+                background-color:  black;
+                
+                border: 3px solid black;
+                 border-style: solid;
+                 border-radius: 3px;
+                 width: 300px;
+                 height: 40px;
+             }
+
+
+             *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0 
+                
+      
+      
+                /*  code insure the background images takes the whole webpage, 
+                  
+                       * -> a  selector, it targets every element in within the html page
+                       margin: 0  -> space around the outside of an element,
+                       setting them to 0 means there will be no space between elements.
+                       box-sizing: border-box -> using the 
+                       "box-sizing" to "border-box," it changes how the width and height of an element are calculated. 
+                       In this mode, the width and height are calculated by including the padding and border within the specified width and height. This means that if you set a fixed width or height for an element with "border-box" box-sizing, adding padding and borders won't make it larger than the specified dimensions.
+                        It makes sizing elements more predictable and easier to work with.
+                 */
+             }
+
+            body{
+               font-family: 'Open Sans', sans-serif;
+               line-height: 2; 
+               /* line-height - makes text readability on a web page, work like double space docs  */
+            }
+
+
+         .contactHeading{
+            height: 45vh;
+               /* 45 viewport height extend the height of element container */
+            background: linear-gradient(rgb(238, 242, 237), rgba(10, 251, 54, 0.771)), url(images/Wetlandcontactimages.jpeg);
+               /* fix the the image, its not taking up the background */
+           
+            text-align: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            
+
+         }
+
+
+         .contactHeading h3{
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+        .contactHeading h2{
+            font-size: 3rem;
+            text-transform: uppercase;
+            padding: 0.4rem 0;
+            letter-spacing: 4px;
+        }
+
+
+        .text{
+         font-weight: 300;
+         
+         /* opacity: 0.9; Transforms text or any element into a transparent form
+             */
+     }
+
+
+     .contactHeading .text
+     {
+      max-width: 1320px;
+      margin: 1.6rem 0;
+      /* 1.6rem for the top and bottom margins.
+       0 for the right and left margins. */
+       margin: 0 auto;
+     }
+
+     
+
+    
+     .contactInfo{
+      
+      margin: 2rem 0;
+      text-align: center;
+      padding: 2rem 0;
+      
+       /* 2rem add double adding based on my originally root size 
+           for example if the size 16px, then 2rem  will resulting in  32px*/
+
+      
+
+      
+  }
+
+  .contactInfo span{
+   display: block;
+   /* display : block used to Set the display property of <span> elements to stack vertically on new lines 
+            and occupy the full width of their container."
+*/
+  }
+
+  .contactInfo div{
+   margin: 0.8rem, 0;
+   padding: 1rem;
+   
+  }
+
+
+  .contactInfo  span .fas{
+   font-size: 2rem;
+   padding-bottom: 0.9rem;
+   color: #19b111f5;
+}
+
+
+.contactInfo  div span:nth-child(2){
+   font-weight: 500;
+   font-size: 1.1rem;
+
+   /* nth-child(2): find all the second  span chlid elements  in  .contactInfo  div
+   and applys this changes font-weight: 800; font-size: 1.1rem */
+}
+
+
+
+
+.contactInfo .text{
+      padding-top: 0.4rem;
+  }
+  .contact-form{
+      padding: 2rem ,0;
+      border-top: 1px solid #c7c7c7;
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 , 1rem;
+     
+     
+  }
+
+
+  .contact-form form{
+   padding-bottom: 1rem;
+}
+
+.form-control{
+   width: 100%;
+   border: 1.5px solid #c7c7c7;
+   border-radius: 5px;
+   padding: 0.7rem;
+   margin: 0.6rem 0;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1rem;
+   outline: 0;
+   /* "outline:" property controls the appearance of the outline around an element. 
+     0 means that the outline will be completely removed 
+   */
+  
+  
+  
+}
+
+.form-control:focus{
+   box-shadow: 0 0 6px -3px rgba(48, 48, 48, 1);
+
+   /* 
+      :focus -> pseudo-class selector that is used to style an element
+           Elements typically receive focus when they are clicked on, 
+             also cloicking on a different element will remove the css changes to the orginal element
+             
+
+            "When the user clicks on any of the form input spaces, a box shadow is displayed, 
+            indicating that the user is actively typing in that particular form input field."
+
+              https://www.youtube.com/watch?v=H1-rmg1Fj3E */
+}
+
+
+.contact-form form div{
+   display: grid;
+   /* display: grid -> used to create a grid layout in which elements are arranged in rows and columns, similar to a table
+         Thus allow us to move each div elememnt user input into columns, for better view, 
+   */
+
+   grid-template-columns: repeat(2, 1fr);
+      /* Takes the div elements forms and moved  them into 2 columns */
+   column-gap: 0.6rem;
+      /* add 0.6 the space between the column-gap */
+}
+
+
+.sendButton{
+ 
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1.3rem;
+   background-color: #19b111f5;;
+   color: white;
+   padding: 0.7rem 1.5rem;
+   border: none;
+   border-radius: 5px;
+   text-transform: uppercase;
+   cursor: pointer; 
+   /* changes cursor(mouse) into a hand curser */
+
+}
+
+.sendButton:hover{
+   opacity: 0.8;
+}
+
+.contactImage img
+{
+   width: 85%
+}
+
+.NavbarPagesContent ul .viewNow
+{
+   position: relative;
+   
+}
+
+
+.NavbarPagesContent ul .viewNow:hover ul
+{ 
+
+   display: initial; /*  element will have its display set to its default value, making it visible. */ 
+
+   
+
+
+   /*  
+   :hover: This is a pseudo-class selector in CSS that matches an element when the user hovers over it with the mouse cursor 
+
+      The elements above  allows us to view " viewNow" sub list by hovering overing over the ViewNow tab
+    
+   */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.NavbarPagesContent ul .vewNowVertList
+{
+
+   list-style-type: none;
+   position: absolute;
+   background:white;
+   width: auto ;
+
+   margin: 0.4rem 0;
+ 
+   border-radius: 3px;
+   top: 22px;
+   display: none;
+   left: 0;
+
+   
+   
+   /* 
+
+        Used Display none -  to hide the vewNowVertList, to create a better hover effect
+
+        display: none is a CSS property used to completely hide an element from the web page, removing it from the document flow and making it inaccessible to users.
+   
+   */
+   
+
+   
+   
+}
+
+
+
+
+
+.NavbarPagesContent ul ul a
+{
+  
+
+   color: gray;
+   
+
+
+
+
+   
+   
+  
+   
+   
+   
+  
+   
+}
+
+
+
+
+
+@media screen and (min-width: 768px)
+{
+/* @Media 
+https://www.youtube.com/watch?v=K24lUqcT0Ms */
+
+.contact-form.text{
+  
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+}
+.contactInfo{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+
+}
+
+
+@media screen and (min-width: 992px){
+   .contactHeading .text{
+       width: 50%;
+   }
+   .contact-form{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       align-items: center;
+   }
+}
+
+@media screen and (min-width: 1200px){
+   .contactInfo{
+       grid-template-columns: repeat(4, 1fr);
+   }
+}
+
+
+
+ 
+
+
+
+     
+      
+
+
+             

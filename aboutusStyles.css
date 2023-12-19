@@ -1,0 +1,344 @@
+
+
+
+/* css pages used  for style rules that define the appearance and layout of HTML elements on a web page. 
+These style rules are applied to the corresponding HTML elements based on their selectors. 
+Selectors can target elements by their tag name, class, ID, or other attributes.
+
+   Key Words ; 
+   
+   alignment = positioning of objects in a straight line
+
+
+*/ 
+
+        
+
+
+        /*CSS styles for the dashboard */
+         /* .NagBar css, code belw used to style navBar list & logo in one row list, on the website */
+        
+        
+         
+
+          /*
+              
+            body is a selector, used to target the entire web page
+            background-image specifies  the path to the image file you want to use as the background 
+            background-position: center; property centers the image within the background area. 
+            background-repeat: no-repeat; property prevents the image from repeating
+
+            height: 100vh, expands the background to complete height of the  webpage.
+
+
+       
+          
+          */
+
+
+          .NagBar
+          { 
+            display : flex;
+        align-items : center;
+        justify-content: space-between;
+        padding: 20px, 80px;
+        position: sticky; 
+        top: 0;
+        left: 0;
+
+        background-color: rgba(0, 0, 0, 0.5); /* Gray color with transparency */
+        backdrop-filter: blur(10px); /* Applies a blur effect to the background */ 
+
+        
+
+        
+        
+
+        
+         
+         
+         }
+           /* .NagBar code is used to alline the logo, &  navbar contents/links into  one vertical row and spaced
+
+                display : flex -> is  use to used to create a flexible box layout for the elements  
+                It enables flexible positioning and alignment of the child elements within the  flex container.
+                align-items : center  -> aligns the child elements vertically within the flex container along the cross-axis. 
+                justify-content: space-between -> property determines the alignment of the child elements along the main axis
+                           "space-between" --> positions the elements with equal spacing between them, 
+                
+                padding: 20px, 80px; -> property defines the padding space around the content of the elements with the "NagBar" class
+                                           "20px, 80px" --> top/bottom and left/right padding/; spacing between elements
+                position: sticky;--> always the Nav Bar to stay in position, 
+            */
+
+         .NavbarPagesContent ul
+          { 
+            display : flex;
+            align-items : center;
+            justify-content:  center;
+            list-style: none;
+           
+            
+
+         
+          }
+
+          /* 
+             .NavbarPagesContent ul -   to aline the  nav bar links within one vertical row[lines 54-56] &
+                                             remove bolt points[ line 57]  
+                                           
+
+
+          */
+          
+
+         
+         .NavbarPagesContent a 
+         { 
+            font-family: "Arial";
+            padding: 0 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 545;
+            color: white;
+         
+            
+
+         }
+
+
+
+          /*  
+                  
+              .NavbarPagesContenta   ->add spacing(padding) to in between each link with the list,[ line 76] 
+                                         used to change the color of the links/tag
+                                         remove the from the text
+
+
+                  text-decoration: none; --> removes the underline, "none" is used ensures that link text does not have any text decoration  
+                  font-size: 16px; --> sets the font size of the link  text  
+                  font-weight: 600 --> Sets the font weight of the anchor text to 600, 
+                                         which corresponds to a bold font weight, thus appearing thicker   
+                  color:  white; --> Sets the color of the link text to white.   
+                 font-family: "Arial" --> change font type    
+                     
+            */ 
+
+
+            .NavbarPagesContent  a:hover,
+            .NavbarPagesContent a.active
+            {
+      
+              
+               border-radius: 2px;
+               
+               
+               box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+               
+            }
+
+             /* 
+               change the color of the link/tag back ground,when hovered by th mouse;
+               And alawys the page im on to be hovered
+              .NavbarPagesContent a.active
+                    1) within our class NavbarPagesContenttag and its tag selector "a"
+                        that  contain the hyper link elements,  which assigned active to "aboutus" hyper link
+                        ,  thus allowing the hover syltes above to stay on that hyperlink page no matter.
+            
+             */ 
+
+             a.blackHover
+             { 
+                background-color:  black;
+                
+                border: 3px solid black;
+                 border-style: solid;
+                 border-radius: 3px;
+                 
+             }
+
+             *{
+               margin: 0;
+               padding: 0;
+               
+     
+     
+               /*  code insure the background images takes the whole webpage, 
+                    EXPLAIN CODE
+                */
+             }
+
+
+    .missionStatment
+        { 
+            
+            padding: 90px 65px;
+            display:flex; 
+            flex-direction: column;
+            align-items : flex-start;
+            font-family: "Arial";
+            
+               /*  HOW DOES THE ABOVE CODE DO ?????
+                 padding: 90px 65px; -> a just the about to section about section
+                 flex-direction: column, direction of flex item, then column then make this  items, move from top to bottom,
+                  align-items : flex-start; -> aline the items
+
+               
+               */
+               
+         }
+     
+
+            .missionStatment h1
+            { 
+                font-size: 55px;
+                color: darkgreen;  
+            }
+             
+            .missionStatment span
+            {
+                color:green;
+                font-size: 23px;
+            }
+
+
+
+            .missionStatment p
+
+              { 
+                width: 50%;
+                padding-top: 10px;
+                color:black;
+
+                 /*  HOW DOES THE ABOVE CODE DO ?????
+                       contains  the   "About US" section Paragragh within left side column
+                      padding-top: 10px;--> sets the amount of space (padding) between the top edge of an element and its content.
+
+
+
+                 */
+
+              }
+
+
+
+
+
+            .AboutUsvideo{ 
+               
+            
+            position: absolute;
+               top: 25%;
+               right: 5%;
+               
+            
+                /*  HOW DOES THE ABOVE CODE DO ????? 
+                abjust the video clip to  within our wanted postion
+
+                  position: absolute -->  the absolutely positioned element will be positioned relative to that parent element
+                                        It can be freely moved using the top, right, bottom, and left properties.
+
+
+
+                
+                */
+                
+             }
+
+
+            .NavbarPagesContent ul .viewNow
+            {
+               position: relative;
+               
+            }
+
+
+            .NavbarPagesContent ul .viewNow:hover ul
+            { 
+
+               display: initial; /*  element will have its display set to its default value, making it visible. */ 
+
+               
+
+
+               /*  
+               :hover: This is a pseudo-class selector in CSS that matches an element when the user hovers over it with the mouse cursor 
+
+                  The elements above  allows us to view " viewNow" sub list by hovering overing over the ViewNow tab
+                
+               */
+
+            }
+
+            
+    
+
+          
+            
+          
+
+
+          
+
+
+
+
+
+            .NavbarPagesContent ul .vewNowVertList
+            {
+
+               list-style-type: none;
+               position: absolute;
+               background:white;
+               width: auto ;
+ 
+               margin: 0rem 0;
+             
+               border-radius: 3px;
+               top: 22px;
+               display: none;
+               left: 0;
+
+               
+               
+               /* 
+
+                    Used Display none -  to hide the vewNowVertList, to create a better hover effect
+
+                    display: none is a CSS property used to completely hide an element from the web page, removing it from the document flow and making it inaccessible to users.
+               
+               */
+               
+
+               
+               
+            }
+
+
+
+            
+
+            .NavbarPagesContent ul ul a
+            {
+              
+
+               color: gray;
+               
+
+
+
+            
+               
+               
+              
+               
+               
+               
+              
+               
+            }
+
+
+             
+
+             

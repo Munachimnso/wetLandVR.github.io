@@ -1,0 +1,617 @@
+
+
+
+/*CSS TIPS - https://www.youtube.com/watch?v=Qhaz36TZG5Y)
+
+
+css pages used  for style rules that define the appearance and layout of HTML elements on a web page. 
+These style rules are applied to the corresponding HTML elements based on their selectors. 
+Selectors can target elements by their tag name, class, ID, or other attributes.
+
+   Key Words ; 
+   
+   alignment = positioning of objects in a straight line
+
+
+*/ 
+
+        
+
+
+        /*CSS styles for the dashboard */
+         /* .NagBar css, code belw used to style navBar list & logo in one row list, on the website */
+        
+        
+         
+
+          /*
+              
+            body is a selector, used to target the entire web page
+            background-image specifies  the path to the image file you want to use as the background 
+            background-position: center; property centers the image within the background area. 
+            background-repeat: no-repeat; property prevents the image from repeating
+
+            height: 100vh, expands the background to complete height of the  webpage.
+              vh-  view port unit, used to ensure the size is the same no matter  size of the webpage
+
+
+       
+          
+          */
+
+
+
+
+          body{  
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-image: url("images/IMG_9062.jpeg");
+
+         
+           
+
+    }
+
+         
+
+
+          .NagBarSpace
+          { 
+            display : flex;
+        align-items : center;
+        justify-content: space-between;
+        padding: 20px 5px;
+        position: sticky; 
+        top: 0;
+        left: 0;
+       
+        
+
+       
+
+        
+
+        
+        
+
+        
+         
+         
+         }
+           /* .NagBar code is used to alline the logo, &  navbar contents/links into  one vertical row and spaced
+
+                display : flex -> is  use to used to create a flexible box layout for the elements  
+                It enables flexible positioning and alignment of the child elements within the  flex container.
+                align-items : center  -> aligns the child elements vertically within the flex container along the cross-axis. 
+                justify-content: space-between -> property determines the alignment of the child elements along the main axis
+                           "space-between" --> positions the elements with equal spacing between them, 
+                
+                padding: 20px, 80px; -> property defines the padding space around the content of the elements with the "NagBar" class
+                                           "20px, 80px" --> top/bottom and left/right padding/; spacing between elements
+                position: sticky;--> always the Nav Bar to stay in position, 
+            */
+
+          .NavBar
+          { 
+            display : flex;
+            align-items : center;
+            justify-content:  center;
+            list-style: none;
+            margin-right: 1rem; 
+
+            
+           
+           
+            
+
+         
+          }
+
+          /* 
+            .navBar to aline the  nav bar links within one vertical row[lines 54-56] &
+                                             remove bolt points[ line 57]  
+
+                    padding: 0 10px -    adding space on the left sid of the  text
+                                           
+
+
+          */
+          
+
+         
+         .NavbarPagesContent a 
+         { 
+            font-family: "Arial";
+            padding: 0 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 545;
+            color:  white;
+
+         
+            
+
+         }
+
+
+
+
+
+          /*  
+                  
+              .NavbarPagesContenta   ->add spacing(padding) to in between each link with the list,[ line 76] 
+                                         used to change the color of the links/tag
+                                         remove the from the text
+
+
+                  text-decoration: none; --> removes the underline, "none" is used ensures that link text does not have any text decoration  
+                  font-size: 16px; --> sets the font size of the link  text  
+                  font-weight: 600 --> Sets the font weight of the anchor text to 600, 
+                                         which corresponds to a bold font weight, thus appearing thicker   
+                  color:  white; --> Sets the color of the link text to white.   
+                 font-family: "Arial" --> change font type    
+                     
+            */ 
+
+
+            .NavbarPagesContent  a:hover,
+            .NavbarPagesContent a.active
+
+            {
+      
+              
+               border-radius: 2px;
+               
+               
+               box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+            
+            }
+
+             /* 
+               change the color of the link/tag back ground,when hovered by th mouse;
+            
+             */ 
+
+            
+
+             
+
+
+
+             a.blackHover
+
+             
+            { 
+               background-color:  black;
+               
+               border: 3px solid black;
+                border-style: solid;
+                border-radius: 3px;
+                color: white;
+                
+                
+                
+            }
+
+
+            .NavbarPagesContent ul .viewNow
+            {
+               position: relative;
+               
+            }
+
+
+            .NavbarPagesContent ul .viewNow:hover ul
+            { 
+
+               display: initial; /*  element will have its display set to its default value, making it visible. */ 
+
+               
+
+
+               /*  
+               :hover: This is a pseudo-class selector in CSS that matches an element when the user hovers over it with the mouse cursor 
+
+                  The elements above  allows us to view " viewNow" sub list by hovering overing over the ViewNow tab
+                
+               */
+
+            }
+
+            
+    
+
+          
+            
+          
+
+
+          
+
+
+
+
+
+            .NavbarPagesContent ul .vewNowVertList
+            {
+
+               list-style-type: none;
+               position: absolute;
+               background:white;
+               width: auto ;
+ 
+               margin: 0rem 0;
+             
+               border-radius: 3px;
+               top: 22px;
+               display: none;
+               left: 0;
+
+               
+               
+               /* 
+
+                    Used Display none -  to hide the vewNowVertList, to create a better hover effect
+
+                    display: none is a CSS property used to completely hide an element from the web page, removing it from the document flow and making it inaccessible to users.
+               
+               */
+               
+
+               
+               
+            }
+
+
+
+            
+
+            .NavbarPagesContent ul ul a
+            {
+              
+
+               color: gray;
+               
+
+
+
+            
+               
+               
+              
+               
+               
+               
+              
+               
+            }
+
+
+            
+
+            *{
+               margin: 0;
+               padding: 0;
+               
+     
+     
+               /*  code insure the background images takes the whole webpage, 
+                    EXPLAIN CODE
+                */
+             }
+
+
+             .webPageContent
+             { 
+                text-align: center;
+                margin-top: 250px;
+
+               
+                
+               
+
+                /* 
+                    text-align: center:   property aligns the text content within the elements to the center;
+                    margin-top: 250px; margin represents the space outside the element's border, and in this case, 
+                                     it creates a vertical space of 250px at the top of the elements.
+                */
+             }
+
+
+             .webPageContent h1
+             {
+                color: white;
+                font-family: "Arial";
+                font-size: 60px;
+                
+
+                
+               
+             }
+
+
+             .webPageContent h2
+             {
+                color:  rgba(236, 232, 232, 0.636);
+                font-family: "Arial";
+                 font-size: 60px;
+                
+
+             }
+
+
+            .webPageContent button
+             {
+                color: white;
+                
+                font-family: "Arial";
+                font-size: 25px;
+                background-color: transparent;
+                border: 3px solid white;
+                border-style: solid;
+                border-radius: 2px;
+                width: 300px;
+                height: 40px;
+
+
+               /* 
+               
+                 .webPageContent button sytling code
+                       1) Changes button color to  white,
+                             a) color: white;
+                       2) Changes the button style to round edges;
+                             a)  border-radius: 2px;
+                                 - border-radius: is used to define the radius of the corners of an element's border.
+                                 - create rounded corners for the element's border, 
+                                  
+                                    
+                       3) makes the button see through(transparent) 
+                             a) background-color: transparent
+                                 - "background-color:" is used to define the background color of an element.
+                                 - " transparent"  value transparent assigned to background-color makes the background of the element transparent
+
+                       4) border-style: solid;  -->  Makes the buttoms boarder full and solid
+                           a) border-style property can accept various values to create different border styles, 
+                                                     such as solid, dashed, dotted
+                             
+                            
+                       5)
+                           
+                       body is a selector, used to target the entire web page
+             background-image specifies  the path to the image file you want to use as the background 
+              background-position: center; property centers the image within the background area. 
+              background-repeat: no-repeat; property prevents the image from repeating
+
+
+         
+
+               */
+             
+            
+            
+
+
+         
+
+                
+
+             } 
+
+            
+             
+            .moblieNavMenu{
+             background-color: transparent;
+             border-radius: 2px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            width: 80px;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            position: absolute;
+            right: 80px;
+            display: none; /* hide the  menu from Nav Bar, but will only show within moblie device, with the @media in css file */
+
+
+   
+             } 
+            
+
+             .moblieNavMenu p
+             { 
+                color:white;
+                font-family: "Arial";
+                align-self: center;
+                padding: 0 20px;
+                
+
+
+
+               
+
+             }
+
+             .close-icon {
+               display: none;
+            
+            
+                
+               color: black; /* Text color */
+               
+               text-decoration: none; /* Remove underline from the anchor link */
+             }
+
+         
+
+
+
+
+
+             /*  Start Media query
+                       Used to  making the website responsive, for 
+
+                       1)  Small device , such as phones  and tablest
+             */
+               
+           /*first esstionlize the media query 
+                    
+                   @media - apply different styles to elements based on the characteristics of the device or screen size 
+                  ( max-width: 799px ) : a media query( , which specifies the conditions under which the styles should be applied.
+
+                  When the width of the device or screen is less than or equal to 799 pixels,
+                    the CSS rules within the @media block will be applied. 
+                    This allows you to create responsive designs for small devices
+         
+           
+           */
+   
+
+
+         /* Make website responsive for Moble devices */
+
+         /* FUTURE FIXES  AND FEATURES */
+
+
+            @media  ( max-width: 400px)
+            { 
+
+               .NavBar a
+                {
+                   color: black;
+                } 
+
+                a.blackHover 
+                {
+                  background-color: black;
+                  border: 3px solid black;
+                  border-style: solid;
+                  border-radius: 3px;
+                   color: white
+              }
+
+
+              
+
+
+               
+              .NavBar[nav-visible = "true"]
+              {
+               transform: translateX(0%);
+               
+               /* 
+                  if nav-visible is true we transform the navBar to  0px, what is visiile effect???
+
+                     then use Js file to switch to false so the NavBar  can be visiable;
+               */
+              }
+
+             
+             .NavBar {
+                
+               
+                display: flex;
+                flex-direction: column;
+                align-items:flex-start;/* align-item - align the set of listed item, where the display of NavBar starts, move from left or right */
+                justify-content:flex-start;  /* justify-content: align the set of listed item  from top to bottom  and in between vertically */
+                list-style: none;
+                background-color: white;
+                position:fixed;
+               
+               
+                
+                height: 100vh;
+                width:  100vh;
+                left: 90px;
+                top:0px;
+                transform: translateX(100%);
+               
+
+            }
+
+            
+
+
+            .moblieNavMenu {
+
+               position: relative;
+               background-color: transparent;
+               backdrop-filter: blur(10px); 
+               
+                        width: 80px;
+                        height: 35px;
+                       
+                        display: flex;
+                        align-items: flex-start;
+                        right: 10px;
+                    }
+         
+                    
+
+
+                 
+
+           
+
+            .NavBar li
+            { 
+             padding:15px 0 0px 30px;
+             position: relative;
+             top: 80px;
+             font-size:  30px;
+            }
+
+            .NagBarSpace
+          { 
+            display : flex;
+        align-items : center;
+        justify-content: space-between;
+        padding: 20px 5px;
+        position: sticky; 
+        top: 0;
+        left: 0;
+         
+         }
+
+         
+          
+
+        
+          
+
+            
+   
+   
+
+
+  
+   
+           
+
+   .close-icon {
+
+            display:flex;
+            position: relative;
+            /* position: relative; sets the positioning context to "relative". 
+               thus the element will be in the normal flow of the document,
+             but its position can be adjusted using the top, right, bottom, or left properties. */
+            top: -200px;
+            
+   
+             
+            color: black; /* Text color */
+            
+            text-decoration: none; /* Remove underline from the anchor link */
+          }
+
+         
+                 
+            }
+
+
+           
+
+
+           
+        

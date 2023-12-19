@@ -1,0 +1,55 @@
+Hi Developer, Do to the fact we change the  project folder  name; thus has affect the links for the images within css, so remember to 
+
+     1. copy the new image path pastes there is path link for any images within our website;
+
+
+
+
+
+
+
+
+     6/14/2023
+     
+       1. finish explain the document.addEventListener('DOMContentLoaded', code.
+       2. then finish the coding the menu interation, the resoucre below
+
+     https://www.youtube.com/watch?v=HbBMp6yUXO0  34.34, 
+
+
+
+    6/19/2023;
+
+         the effect of the menus  bottom is still not working, fix, look the if statment in js, or give to chatGpT t fix; ]
+
+   6/20/2023
+
+         create an x botton within the NabBar for the moblie view
+
+
+    6/21/2023
+
+        move the x tab to the top of the  moblie menu bar
+
+
+    6/26/2023
+
+    MAKES THE NAVBAR LINKS ACTIVE,
+
+
+  6/31/2023
+    https://www.youtube.com/watch?v=ThSaI0kuez8, use this vidoe  to MAKES THE NAVBAR LINKS ACTIVE,
+
+  
+  The reason why the  live server background  is wasnt working  because :  the using the path for the image, you have cut the path of the image ourside second layer of the within the  project folder; Remeber  liver start from the project path; 
+
+        for exaample path is WetLandProject/VRImage/VRimages.jpeg,  for live server : VRImage/VRimages.jpeg
+
+        
+
+7/30/2023-  finish the contact page https://youtu.be/MA74HEkua-g?t=293
+
+
+10/6/2023 ; https://youtu.be/MA74HEkua-g?t=441
+            https://github.com/prabinmagar/contact-us-page-/blob/master/index.html
+         
